@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.UpdateKajianActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                >
+
+                <ImageView
+                    android:id="@+id/avAttend_img_btnBack"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                    app:tint="@color/gray" />
+
+                <TextView
+                    android:id="@+id/button_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Update"
+                    android:textColor="@color/defautRed" />
+            </RelativeLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_image"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:strokeWidth="0dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/gray"
+                android:layout_margin="12dp"
+                >
+                <ImageView
+                    android:id="@+id/prv_image"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/image_link_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Image Link"
+                    android:layout_margin="12dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/prv_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Judul Kajian"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="24dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="18dp"
+                />
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:dividerColor="@color/gray3"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Date"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/prv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="18dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="20 January, 2022"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Time"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/prv_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="18dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="10:30"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="City"
+                    android:textSize="13dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/prv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="18dp"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Jakarta"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Timestamp"
+                    android:textSize="13dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/prv_timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="18dp"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="TIMESTAMP"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:dividerColor="@color/gray3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Edit Deskripsi Kajian"
+                android:paddingTop="2dp"
+                android:textSize="13dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/prv_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_light"
+
+                android:background="@null"
+
+
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textSize="13dp" />
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:dividerColor="@color/gray3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Edit Alamat Kajian"
+                android:paddingTop="2dp"
+                android:textSize="13dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/prv_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="4dp"
+
+                android:background="@null"
+
+
+                android:fontFamily="@font/roboto_light"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut"
+                android:textSize="13dp" />
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider_yt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:dividerColor="@color/gray3"
+                />
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:id="@+id/layout_videoyt"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <RelativeLayout
+                   android:id="@+id/relative_yt"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_marginStart="14dp"
+                       android:fontFamily="@font/roboto_bold"
+                       android:text="Live Streaming "
+                       android:textSize="13dp" />
+
+
+               </RelativeLayout>
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/prv_ytlink"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginHorizontal="12dp"
+                   android:layout_marginTop="4dp"
+
+                   android:background="@null"
+
+
+                   android:fontFamily="@font/roboto_light"
+                   android:text="youtube.com/awokewo"
+                   android:textSize="13dp" />
+               <com.google.android.material.card.MaterialCardView
+                   android:id="@+id/card_yt"
+                   android:layout_width="match_parent"
+                   android:layout_height="220dp"
+                   android:layout_marginHorizontal="12dp"
+                   android:layout_marginTop="12dp"
+                   app:cardBackgroundColor="@color/white"
+                   android:layout_marginBottom="22dp"
+                   app:cardElevation="4dp"
+                   app:strokeWidth="0dp" >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical">
+                       <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                           android:id="@+id/youtube_player_view"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           />
+                   </LinearLayout>
+               </com.google.android.material.card.MaterialCardView>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipeContainer"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui_tambahkajian.tamkajJudul"
+    android:orientation="vertical">
+
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="none"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+
+           android:orientation="vertical">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               >
+
+               <ImageView
+                   android:id="@+id/avAttend_img_btnBack"
+                   android:layout_width="22dp"
+                   android:layout_height="22dp"
+                   android:layout_centerVertical="true"
+                   android:layout_marginStart="16dp"
+                   android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                   app:tint="@color/gray" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Memulai Kajian"
+                   android:layout_centerInParent="true"
+                   android:fontFamily="@font/poppins_medium"
+                   android:textColor="@color/gray"
+                   />
+
+
+
+           </RelativeLayout>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Masukkan \nJudul Kajian*"
+               android:fontFamily="@font/poppins_bold"
+               android:textSize="25dp"
+               android:layout_marginTop="22dp"
+               android:layout_marginStart="18dp"
+               />
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/inputjudul"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="Judul Kajian"
+               android:drawableLeft="@drawable/ic_baseline_edit_24"
+               android:drawableTint="@color/gray"
+               android:fontFamily="@font/roboto_light"
+               android:drawablePadding="8dp"
+               android:background="@null"
+               android:layout_marginStart="18dp"
+               />
+
+           <com.google.android.material.divider.MaterialDivider
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="18dp"
+               app:dividerColor="@color/gray3"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Masukkan \nDeskripsi Kajian*"
+               android:fontFamily="@font/poppins_bold"
+               android:textSize="25dp"
+               android:layout_marginTop="12dp"
+
+               android:layout_marginStart="18dp"
+               />
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/inputdeskripsi"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="Deskripsi Kajian"
+               android:background="@null"
+               android:fontFamily="@font/roboto_light"
+               android:drawableLeft="@drawable/ic_baseline_edit_24"
+               android:drawableTint="@color/gray"
+               android:drawablePadding="8dp"
+               android:layout_marginStart="18dp"
+               />
+
+           <com.google.android.material.divider.MaterialDivider
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="18dp"
+               app:dividerColor="@color/gray3"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Masukkan \nPoster Kajian*"
+               android:fontFamily="@font/poppins_bold"
+               android:textSize="25dp"
+               android:layout_marginTop="12dp"
+               android:layout_marginStart="18dp"
+               />
+
+
+
+           <com.google.android.material.card.MaterialCardView
+               android:id="@+id/inputposter"
+               android:layout_width="292dp"
+               android:layout_height="292dp"
+               android:layout_gravity="center"
+               app:strokeWidth="0dp"
+               android:layout_marginTop="3dp"
+               app:cardBackgroundColor="@color/gray3">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ps_ic_camera"
+                   android:layout_gravity="center"
+                   />
+               <ImageView
+                   android:id="@+id/image_preview"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   />
+
+           </com.google.android.material.card.MaterialCardView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Recommended Size 1050x1050px"
+               android:textColor="@color/gray"
+               android:fontFamily="@font/roboto_light"
+               android:textSize="10dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="2dp"
+               />
+
+           <com.google.android.material.divider.MaterialDivider
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="18dp"
+               app:dividerColor="@color/gray3"
+               />
+
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Masukkan \nWaktu Kajian"
+               android:fontFamily="@font/poppins_bold"
+               android:textSize="25dp"
+               android:layout_marginTop="12dp"
+               android:layout_marginStart="18dp"
+               />
+           <TextView
+               android:id="@+id/inputTime"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Add Date and Time"
+               android:textColor="@color/gray"
+               android:textSize="18dp"
+               android:drawableLeft="@drawable/ic_baseline_event_note_24"
+               android:drawableTint="@color/gray"
+               android:fontFamily="@font/roboto_light"
+               android:drawablePadding="8dp"
+               android:background="@null"
+               android:layout_marginStart="18dp" />
+           <com.google.android.material.divider.MaterialDivider
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="18dp"
+               app:dividerColor="@color/gray3"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Masukkan \nLokasi Kajian"
+               android:fontFamily="@font/poppins_bold"
+               android:textSize="25dp"
+               android:layout_marginTop="12dp"
+               android:layout_marginStart="18dp"
+               />
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/inputCity"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="Kota Daerah Letak Kajian"
+               android:textColor="@color/gray"
+               android:textSize="18dp"
+               android:drawableLeft="@drawable/ic_baseline_location_city_24"
+               android:drawableTint="@color/gray"
+               android:fontFamily="@font/roboto_light"
+               android:drawablePadding="8dp"
+               android:background="@null"
+               android:layout_marginStart="18dp"
+               android:layout_marginBottom="5dp"
+
+               />
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/inputDetailAlamat"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="Detail Alamat Kajian"
+               android:textColor="@color/gray"
+               android:textSize="18dp"
+               android:drawableLeft="@drawable/ic_baseline_event_note_24"
+               android:drawableTint="@color/gray"
+               android:fontFamily="@font/roboto_light"
+               android:drawablePadding="8dp"
+               android:background="@null"
+               android:layout_marginStart="18dp"
+
+               />
+
+           <TextView
+               android:id="@+id/inputLongLat"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Masukkan Titik Lokasi"
+               android:textColor="@color/gray"
+               android:textSize="18dp"
+               android:drawableLeft="@drawable/ic_baseline_location_on_24"
+               android:drawableTint="@color/gray"
+               android:fontFamily="@font/roboto_light"
+               android:drawablePadding="8dp"
+               android:background="@null"
+               android:layout_marginStart="18dp"
+               android:layout_marginTop="2dp"
+               android:layout_marginBottom="32dp"
+               />
+
+           <com.google.android.material.divider.MaterialDivider
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="18dp"
+               app:dividerColor="@color/gray3"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Masukkan \nLink Live Streaming"
+               android:fontFamily="@font/poppins_bold"
+               android:textSize="25dp"
+               android:layout_marginTop="12dp"
+               android:layout_marginStart="18dp"
+               />
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/inputlinklive"
+               android:layout_width="wrap_content"
+               android:fontFamily="@font/roboto_light"
+               android:layout_height="wrap_content"
+               android:hint="Link Live Streaming "
+               android:background="@null"
+               android:drawableLeft="@drawable/ic_baseline_live_tv_24"
+               android:drawableTint="@color/gray"
+               android:drawablePadding="8dp"
+               android:layout_marginStart="18dp"
+               />
+           <com.google.android.material.divider.MaterialDivider
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="18dp"
+               app:dividerColor="@color/gray3"
+               />
+
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/btnNext"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="NEXT"
+               android:layout_margin="22dp"
+               android:backgroundTint="@color/mainColor"
+               android:elevation="12dp"
+               />
+
+
+
+
+       </LinearLayout>
+   </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "581234462518",
+    "project_id": "kajeean-app",
+    "storage_bucket": "kajeean-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581234462518:android:bcee8113530681345b2d97",
+        "android_client_info": {
+          "package_name": "com.apple.glantrox.kajeean_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581234462518-585gthusr11vuqprrhpkeei47vdbeas9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuTHFAb3NMgKWN5aLT4F6QKeKlo-qx9F0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581234462518-585gthusr11vuqprrhpkeei47vdbeas9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

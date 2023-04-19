@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/commentscard_pfpusers"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="1000dp"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/gray3">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="39dp"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/commentstv_namauser"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/commentscard_pfpusers"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Nama User"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/commentstv_tanggalcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/commentstv_namauser"
+        android:fontFamily="@font/poppins_light"
+        android:paddingTop="3dp"
+        android:text="12/12/2020"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/commentstv_isikomentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentstv_namauser"
+        android:layout_marginStart="14dp"
+        android:layout_toRightOf="@+id/commentscard_pfpusers"
+        android:fontFamily="@font/roboto_light"
+        android:text="ipsum dolor sit amet, consectetur adipiscing elit, qui officia deserunt mollit anim id est laborum "
+        android:textSize="15dp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentstv_isikomentar"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:dividerColor="@color/gray3" />
+
+</RelativeLayout>
